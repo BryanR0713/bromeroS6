@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="bromeroS6.Registro"
+             NavigationPage.HasNavigationBar="false">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry x:Name="txtCodigo" Placeholder="Ingresar Codigo"/>
+            <Entry x:Name="txtNombre" Placeholder="Ingresar Nombre"/>
+            <Entry x:Name="txtApellido" Placeholder="Ingresar Apellido"/>
+            <Entry x:Name="txtEdad" Placeholder="Ingresar Edad"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition/>
+
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="bntInsertar" Grid.Row="0" Grid.Column="0" Text="Insertar" Clicked="bntInsertar_Clicked">
+                </Button>
+                <Button x:Name="bntRegresar" Grid.Row="0" Grid.Column="1" Text="Regresar" Clicked="bntRegresar_Clicked">
+                </Button>
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
